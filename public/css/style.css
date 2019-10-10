@@ -1,0 +1,37 @@
+#navbar {
+    display: flex;
+    align-items: baseline;
+    border-bottom: black 1px solid;
+}
+
+nav#navbar > * {
+    padding: 10px;
+}
+
+section.clucks-container {
+    padding: 20px;
+}
+.profile-img-container > * {
+    display: inline;
+}
+
+img.cluck-image {
+    width: 75%;
+    height: 250px;
+    border: #000 1px solid;
+}
+
+.cluck-container {
+    border: #000 1px solid;
+    margin-top: 13px;
+}
+
+.cluck-container > * {
+    padding-left: 20px;
+}
+.cluck-container {
+    border: #000 1px solid;
+    margin-top: 13px;
+    width: 300px;
+    min-width: 75%;
+}

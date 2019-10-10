@@ -1,0 +1,17 @@
+<nav id="navbar"> 
+    <div class="brand-logo-container">
+        <a href="/clucks/index"><img src="/images/cluckr-logo.png" alt="brand-logo-image" style="width:60px; height:60px"></a>
+    </div>
+
+    <%if (!username) {%>
+        <a href="/sign_in" class="btn btn-outline-secondary nav-btn">Sign In</a>
+    <%} else {%>
+        <a href="/clucks/new" class="btn btn-outline-secondary nav-btn">Cluck!</a>
+        <p><%= username %></p>
+        <div>
+            <form action="/sign_out" method="POST">
+                <input type="submit" class="btn btn-outline-secondary nav-btn" value="Sign Out">
+            </form>
+        </div>
+    <%}%>
+</nav>
